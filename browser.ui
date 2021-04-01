@@ -13,16 +13,16 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWebEngineView" name="webbrowser">
+  <widget class="QWebEngineView" name="webbrowser" native="true">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
+     <x>10</x>
+     <y>10</y>
      <width>681</width>
      <height>581</height>
     </rect>
    </property>
-   <property name="url">
+   <property name="url" stdset="0">
     <url>
      <string>https://www.hao123.com/</string>
     </url>
