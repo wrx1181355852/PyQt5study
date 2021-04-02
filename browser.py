@@ -9,21 +9,23 @@
 
 
 from PyQt5 import QtCore
-from PyQt5 import QtWebEngineWidgets
 
 
 class Ui_Form(object):
-    def setupUi(self, Form):
-        Form.setObjectName("Form")
-        Form.resize(685, 595)
-        self.webbrowser = QtWebEngineWidgets.QWebEngineView(Form)
-        self.webbrowser.setGeometry(QtCore.QRect(0, 0, 681, 581))
-        self.webbrowser.setUrl(QtCore.QUrl("https://www.hao123.com/"))
-        self.webbrowser.setObjectName("webbrowser")
+	def setupUi(self, Form):
+		Form.setObjectName("Form")
+		Form.resize(685, 595)
+		self.webbrowser = QtWebEngineWidgets.QWebEngineView(Form)
+		self.webbrowser.setGeometry(QtCore.QRect(10, 10, 681, 581))
+		self.webbrowser.setProperty("url", QtCore.QUrl("https://www.hao123.com/"))
+		self.webbrowser.setObjectName("webbrowser")
 
-        self.retranslateUi(Form)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+		self.retranslateUi(Form)
+		QtCore.QMetaObject.connectSlotsByName(Form)
 
-    def retranslateUi(self, Form):
-        _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+	def retranslateUi(self, Form):
+		_translate = QtCore.QCoreApplication.translate
+		Form.setWindowTitle(_translate("Form", "Form"))
+
+
+from PyQt5 import QtWebEngineWidgets
